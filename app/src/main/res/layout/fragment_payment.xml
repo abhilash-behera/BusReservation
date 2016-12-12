@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.aashu.busreservation.fragment_payment">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#201e1e1e"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dip"
+        android:padding="2dip"
+        android:id="@+id/card_payment_table"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment With Card"
+            android:textSize="30dp"
+            android:textStyle="italic"
+            android:id="@+id/cname"
+            android:textColor="#000"
+            android:layout_marginTop="7dp"
+            />
+        <TableRow android:layout_width="fill_parent">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dip"
+                android:text="VISA\t MASTER \t MASTERO \t RUPAY"
+                android:textAlignment="center"
+                android:textSize="15dip"
+                android:textColor="#0cab06"
+                />
+        </TableRow>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="CONTINUE"
+            android:id="@+id/card_payment_button"/>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#201e1e1e"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="180dip"
+        android:padding="2dip"
+        android:layout_below="@+id/card_payment_table"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Net Banking"
+            android:textSize="30dp"
+            android:textStyle="italic"
+            android:id="@+id/cname2"
+            android:textColor="#000"
+            android:layout_marginTop="7dp"
+            />
+        <TableRow android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Get 10% discount with HDFC banking"
+                android:textColor="#0cab06"
+                android:textSize="16dip"/>
+        </TableRow>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="CONTINUE"
+            android:id="@+id/netBanking_button"
+            />
+    </TableLayout>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/coordinatorLayout"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".Payment">
+    </android.support.design.widget.CoordinatorLayout>
+
+</FrameLayout>
+
+
+
+
